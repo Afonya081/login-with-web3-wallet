@@ -11,3 +11,11 @@
 2. [www/web3-auth/user-content.php](www/web3-auth/user-content.php) - Контент к которому пользователь получает доступ
 3. [www/web3-auth/web3-auth.php](www/web3-auth/web3-auth.php) - В этот файл JS делает запрос и сохраняет авторизацию в $_SESSION['web3-wallet']
 4. [www/web3-auth/web3-exit.php](www/web3-auth/web3-exit.php) - Пример выхода
+
+## Installation
+
+You can install the package via composer: 
+
+```bash
+composer require vladimirgav/login-with-web3-wallet
+```

@@ -1,0 +1,22 @@
+{
+    "name": "vladimirgav/login-with-web3-wallet",
+    "description": "Login with Web3 Wallet Wallets: MetaMask, Trust Wallet, Coinbase Wallet",
+    "type": "library",
+	"license": "proprietary",
+    "authors": [
+        {
+            "name": "VladimirGav",
+            "email": "vladimir@vladimir.vladimir",
+            "homepage": "https://github.com/VladimirGav"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+		"php": ">=7.1"
+	},
+    "autoload": {
+        "psr-4": {
+        "githubinphpcomposer\\": "src/"
+    }
+  }
+}
