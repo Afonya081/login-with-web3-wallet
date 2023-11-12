@@ -14,7 +14,9 @@
     <title>Login with Web3 Wallet</title>
     <meta name="description" content="Login with Web3 Wallets: MetaMask, Trust Wallet, Coinbase Wallet ...">
     <script src="/web3-auth/js/web3.min.js"></script>
+    <script src="/web3-auth/js/sWeb3App.min.js"></script>
     <script src="/web3-auth/js/web3auth.js"></script>
+    <!--<script type="module" src="/web3-auth/js/web3auth.js"></script>-->
     <link rel="stylesheet" href="/web3-auth/css/web3auth.css" type="text/css">
 </head>
 <body>

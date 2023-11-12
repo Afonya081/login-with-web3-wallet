@@ -12,10 +12,24 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 // check web3 authorization
-if(!empty($_POST['web3-wallet'])){
-    $_SESSION['web3-wallet'] = $_POST['web3-wallet'];
-    // TODO выполните личную регистрацию и автотризацию пользователя, если требуется
-    exit(json_encode(['error'=>0]));
-} else {
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit(json_encode(['error'=>1]));
 }
+$referer = $_SERVER['HTTP_REFERER'];
+if ($referer && strpos($referer, $_SERVER['HTTP_HOST']) === false) {
+    exit(json_encode(['error'=>1]));
+}
+if(empty($_POST['web3-wallet'])){
+    exit(json_encode(['error'=>1]));
+}
+
+/**
+ * TODO Perform additional server-side wallet signature verification
+ * $recoveredAddress = web3.eth.personal.ecRecover($_POST['signMessage'], $_POST['signResult']);
+ * if($recoveredAddress != $_POST['web3-wallet']) { exit(json_encode(['error'=>1])); }
+ */
+
+$_SESSION['web3-wallet'] = $_POST['web3-wallet'];
+// TODO perform personal registration and user authorization, if necessary
+exit(json_encode(['error'=>0]));

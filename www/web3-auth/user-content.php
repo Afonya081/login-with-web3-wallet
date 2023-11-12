@@ -15,7 +15,7 @@ if (session_status() == PHP_SESSION_NONE) {
 if(!empty($_SESSION['web3-wallet'])){
     echo 'Address User Wallet: '.$_SESSION['web3-wallet'];
     echo '<br>Show User Content';
-    echo '<br><a href="/web3-auth/web3-exit.php">Exit</a>';
 } else {
     echo 'User Content Not Available';
 }
+echo '<br><a href="/web3-auth/web3-exit.php">Exit</a>';
