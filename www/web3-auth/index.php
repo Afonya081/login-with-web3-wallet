@@ -24,7 +24,7 @@
     <h1>Login with Web3 Wallet</h1>
     <h2>Wallets: MetaMask, Trust Wallet, Coinbase Wallet ...</h2>
 
-    <a data-user-content-url="/web3-auth/user-content.php" data-user-auth-url="/web3-auth/web3-auth.php"  class="LoginWeb3Button" href="#">Login with Web3 Wallet</a>
+    <a data-user-content-url="/web3-auth/user-content.php" data-user-auth-url="/web3-auth/web3-auth.php"  class="LoginWeb3Button" href="/web3-auth/web3-auth.php">Login with Web3 Wallet</a>
 
 </div>
 </body>
